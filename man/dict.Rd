@@ -3,28 +3,23 @@
 \docType{data}
 \name{dict}
 \alias{dict}
-\title{Dict}
+\title{Dictionary}
 \format{
 A data frame with columns:
 \describe{
-\item{faa}{FAA airport code.}
-\item{name}{Usual name of the airport.}
-\item{lat, lon}{Location of airport.}
-\item{alt}{Altitude, in feet.}
-\item{tz}{Timezone offset from GMT.}
-\item{dst}{Daylight savings time zone. A = Standard US DST: starts on the
-second Sunday of March, ends on the first Sunday of November.
-U = unknown. N = no dst.}
-\item{tzone}{IANA time zone, as determined by GeoNames webservice.}
+\item{lang_nr}{WCS Language Number: values from 1 to 110}
+\item{term_nr}{Sequential numbering of terms per language}
+\item{term}{Transcription of the color term}
+\item{term_abb}{A unique abbreviation of the term}
 }
 }
 \source{
-\url{https://openflights.org/data.html}, downloaded 2021-12-17
+\url{https://www1.icsi.berkeley.edu/wcs/data/20041016/txt/dict.txt}, downloaded 2021-12-17
 }
 \usage{
 dict
 }
 \description{
-Useful metadata about airports.
+Dictionary file to lookup term number and the corresponding term and abbreviaton for each language.
 }
 \keyword{datasets}

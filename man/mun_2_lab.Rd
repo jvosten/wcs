@@ -3,28 +3,29 @@
 \docType{data}
 \name{mun_2_lab}
 \alias{mun_2_lab}
-\title{Mun2Lab}
+\title{Munsell to CIEL\emph{a}b}
 \format{
 A data frame with columns:
 \describe{
-\item{faa}{FAA airport code.}
-\item{name}{Usual name of the airport.}
-\item{lat, lon}{Location of airport.}
-\item{alt}{Altitude, in feet.}
-\item{tz}{Timezone offset from GMT.}
-\item{dst}{Daylight savings time zone. A = Standard US DST: starts on the
-second Sunday of March, ends on the first Sunday of November.
-U = unknown. N = no dst.}
-\item{tzone}{IANA time zone, as determined by GeoNames webservice.}
+\item{chip_nr}{WCS Chip Number: values from 1 to 330}
+\item{wcs_mv}{WCS code for Munsell Value}
+\item{wcs_mh}{WCS code for Munsell Hue}
+\item{mun_chroma}{Munsell Chroma}
+\item{mun_hue}{Munsell Hue}
+\item{mun_value}{Munsell Value}
+\item{L_star}{CIE\verb{L*a*b*} \verb{L*} reference value }
+\item{a_star}{CIE\verb{L*a*b*} \code{a} reference value}
+\item{b_star}{CIE\verb{L*a*b*} \verb{b*} reference value}
 }
 }
 \source{
-\url{https://openflights.org/data.html}, downloaded 2021-12-17
+\url{https://www1.icsi.berkeley.edu/wcs/data/cnum-maps/cnum-vhcm-lab-new.txt}, downloaded 2021-12-17
 }
 \usage{
 mun_2_lab
 }
 \description{
-Useful metadata about airports.
+Mapping table for Munsell Value, Chroma & Hue values to the CIELAB color space.
+The conversion from Munsell to CIEL\emph{a}b* was done assuming Illuminant C.
 }
 \keyword{datasets}

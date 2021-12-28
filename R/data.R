@@ -12,7 +12,7 @@ NULL
 #'  \item{grid_row}{WCS Grid Row: values from A to J}
 #'  \item{grid_col}{WCS Grid Columns: values from 0 to 40}
 #'  \item{grid_coord}{Concatenation of grid_row and grid_col}
-#' 
+#'
 #' }
 #' @examples
 #' chip
@@ -46,15 +46,16 @@ NULL
 #' @source <https://www1.icsi.berkeley.edu/wcs/data/cnum-maps/cnum-vhcm-lab-new.txt>, downloaded 2021-12-17
 #' @format A data frame with columns:
 #' \describe{
+#'  \item{chip_nr}{WCS Chip Number: values from 1 to 330}
 #'  \item{wcs_mv}{WCS code for Munsell Value}
 #'  \item{wcs_mh}{WCS code for Munsell Hue}
 #'  \item{mun_chroma}{Munsell Chroma}
 #'  \item{mun_hue}{Munsell Hue}
 #'  \item{mun_value}{Munsell Value}
-#'  \item{L_star}{CIEL*a*b* `L*` reference value }
-#'  \item{a_star}{CIEL*a*b* `a` reference value}
-#'  \item{b_star}{CIEL*a*b* `b*` reference value}
-#' } 
+#'  \item{L_star}{CIE`L*a*b*` `L*` reference value }
+#'  \item{a_star}{CIE`L*a*b*` `a` reference value}
+#'  \item{b_star}{CIE`L*a*b*` `b*` reference value}
+#' }
 "mun_2_lab"
 
 #' Foci task (expanded)

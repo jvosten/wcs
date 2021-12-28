@@ -3,28 +3,23 @@
 \docType{data}
 \name{lang}
 \alias{lang}
-\title{Lang}
+\title{Languages}
 \format{
 A data frame with columns:
 \describe{
-\item{faa}{FAA airport code.}
-\item{name}{Usual name of the airport.}
-\item{lat, lon}{Location of airport.}
-\item{alt}{Altitude, in feet.}
-\item{tz}{Timezone offset from GMT.}
-\item{dst}{Daylight savings time zone. A = Standard US DST: starts on the
-second Sunday of March, ends on the first Sunday of November.
-U = unknown. N = no dst.}
-\item{tzone}{IANA time zone, as determined by GeoNames webservice.}
+\item{lang_nr}{WCS Language Number: values from 1 to 110}
+\item{lang_name}{Name of each language}
+\item{lang_country}{Country}
+\item{iso_693_3}{ISO code of each language}
 }
 }
 \source{
-\url{https://openflights.org/data.html}, downloaded 2021-12-17
+\url{https://www1.icsi.berkeley.edu/wcs/WCS_SIL_codes.html}, downloaded 2021-12-17
 }
 \usage{
 lang
 }
 \description{
-Useful metadata about airports.
+Information on the WCS language names, including origin and ISO 693-3 codes.
 }
 \keyword{datasets}

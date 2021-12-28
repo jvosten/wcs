@@ -3,25 +3,25 @@
 \docType{data}
 \name{chip}
 \alias{chip}
-\title{Chip}
+\title{Chips}
 \format{
 A data frame with columns:
 \describe{
-\item{chip_nr}{Values from 1 to 330}
-\item{grid_row}{Values from A to J}
-\item{grid_col}{Values from 0 to 40}
+\item{chip_nr}{WCS Chip Number: values from 1 to 330}
+\item{grid_row}{WCS Grid Row: values from A to J}
+\item{grid_col}{WCS Grid Columns: values from 0 to 40}
 \item{grid_coord}{Concatenation of grid_row and grid_col}
 
 }
 }
 \source{
-\url{https://openflights.org/data.html}, downloaded 2021-12-17
+\url{https://www1.icsi.berkeley.edu/wcs/data/20021219/txt/chip.txt}, downloaded 2021-12-17
 }
 \usage{
 chip
 }
 \description{
-Useful metadata about airports.
+Chip numbers and grid coordinates for the Munsell chart.
 }
 \examples{
 chip
