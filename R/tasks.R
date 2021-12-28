@@ -2,6 +2,7 @@
 
 # Function, to substitute duplicate values in term_abb by na values
 rm_duplicates <- function(lang_dict){
+  duplicate.flag <- NULL
   lang_dict %>%
     dplyr::group_by(lang_nr, term_abb) %>%
     dplyr::mutate(duplicate.flag = dplyr::n() > 1,

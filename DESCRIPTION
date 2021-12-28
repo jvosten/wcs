@@ -1,11 +1,11 @@
 Package: wcs
-Title: This package contains a tidied version of each data table of the [World Color Survey](https://www1.icsi.berkeley.edu/wcs/).
+Title: Loads tidy WCS data
 Version: 0.0.0.9000
 Authors@R: 
     person("Jott", "Ess", 
     email = "21955156+jvosten@users.noreply.github.com", 
     role = c("aut", "cre"))
-Description: Loads tidied WCS data as tibbles
+Description: This package loads a tidied version of each data table of the [World Color Survey](https://www1.icsi.berkeley.edu/wcs/) as tibbles.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
