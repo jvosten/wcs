@@ -1,6 +1,6 @@
 Package: wcs
 Title: Loads tidy WCS data
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Jott", "Ess", 
     email = "21955156+jvosten@users.noreply.github.com", 
